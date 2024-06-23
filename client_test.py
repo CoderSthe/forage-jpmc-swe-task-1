@@ -49,9 +49,9 @@ class ClientTest(unittest.TestCase):
 
     
     def test_getRatio_division_by_non_zero_number(self):
-        self.assertEqual(getRatio(10, 2), 5)
-        self.assertEqual(getRatio(9, 3), 3)
-        self.assertEqual(getRatio(10,3), 10/3)
+        self.assertEqual(getRatio(120.00, 60.00), 2.0)
+        self.assertEqual(getRatio(90.00, 60.00), 1.5)
+        self.assertEqual(getRatio(100.00,100.00), 1.0)
 
 
 if __name__ == "__main__":
